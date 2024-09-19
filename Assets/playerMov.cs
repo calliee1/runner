@@ -11,6 +11,7 @@ public class playerMov : MonoBehaviour
 
     public AudioSource sfxPlayer;
     public AudioSource musicPlayer;
+    
  
      
 
@@ -26,7 +27,8 @@ public class playerMov : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
+        sfxPlayer = GetComponent<AudioSource>();
+    }  
 
     // Update is called once per frame
     void Update()
@@ -41,6 +43,7 @@ public class playerMov : MonoBehaviour
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
+            sfxPlayer.PlayOneShot(jump);
         }
     }
 
