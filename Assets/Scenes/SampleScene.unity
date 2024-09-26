@@ -1472,6 +1472,7 @@ GameObject:
   - component: {fileID: 1543918544}
   - component: {fileID: 1543918540}
   - component: {fileID: 1543918545}
+  - component: {fileID: 1543918546}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1511,7 +1512,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0106028095, y: -0.14667088}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1522,7 +1523,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5122701, y: 0.71643627}
   m_EdgeRadius: 0
 --- !u!50 &1543918541
 Rigidbody2D:
@@ -1550,7 +1551,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1543918542
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1593,7 +1594,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: b454e4987d48e3943a6e9eb29c4b9903, type: 3}
-  m_Color: {r: 0.38848346, g: 0.8312058, b: 0.8490566, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1612,9 +1613,9 @@ Transform:
   m_GameObject: {fileID: 1543918539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.115, y: -3.271, z: 0}
-  m_LocalScale: {x: 0.5579341, y: 0.54302496, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -5.18, y: 6.53, z: -3.22}
+  m_LocalScale: {x: 1.58, y: 1.7132728, z: 0.4609907}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1633,11 +1634,11 @@ MonoBehaviour:
   jump: {fileID: 8300000, guid: 3ac3d4506e1e2bd40b10df4fbfe790f7, type: 3}
   backgroundMusic: {fileID: 8300000, guid: e2d63ac95cde7664aa792acd937148bc, type: 3}
   sfxPlayer: {fileID: 0}
-  musicPlayer: {fileID: 0}
+  musicPlayer: {fileID: 398136860}
   moveSpeed: 8
   jumpForce: 20
   groundCheckPoint: {fileID: 1543918543}
-  checkRadius: 0.45
+  checkRadius: 2
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -1661,7 +1662,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.73815155
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -1737,6 +1738,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1543918546
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543918539}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c015fc9631458744b19ff946c543cd5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

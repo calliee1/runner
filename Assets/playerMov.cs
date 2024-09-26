@@ -11,9 +11,6 @@ public class playerMov : MonoBehaviour
 
     public AudioSource sfxPlayer;
     public AudioSource musicPlayer;
-    
- 
-     
 
     public float moveSpeed = 2f;
     public float jumpForce = 10f;
@@ -23,27 +20,33 @@ public class playerMov : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isGrounded;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sfxPlayer = GetComponent<AudioSource>();
-    }  
+
+        // Initialize and loop background music
+        musicPlayer.loop = true;
+        musicPlayer.clip = backgroundMusic;
+        musicPlayer.Play();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        // Constant Forward movement
+        // Constant forward movement
         rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
 
         // Check if the player is grounded
         isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, checkRadius, groundLayer);
 
-        // jumping logic
+        // Jumping logic
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
-            sfxPlayer.PlayOneShot(jump);
+            sfxPlayer.PlayOneShot(jump); // Play jump sound only when jumping
         }
     }
 
@@ -51,12 +54,13 @@ public class playerMov : MonoBehaviour
     {
         // Add an upward force for jumping
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
     }
 
+    /*
     private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(groundCheckPoint.position, checkRadius);
-    }
 
+    */
 }
+        // Draw a sphere to visualize ground check radius in the editor
+        
