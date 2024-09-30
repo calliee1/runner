@@ -20,7 +20,7 @@ public class playerMov : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isGrounded;
-
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +31,7 @@ public class playerMov : MonoBehaviour
         musicPlayer.loop = true;
         musicPlayer.clip = backgroundMusic;
         musicPlayer.Play();
+        //anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,11 +43,21 @@ public class playerMov : MonoBehaviour
         // Check if the player is grounded
         isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, checkRadius, groundLayer);
 
+        if(isGrounded)
+        {
+            anim.SetBool("isOnGround", true);
+        }
+        if (!isGrounded)
+        {
+            anim.SetBool("isOnGround", false);
+        }
+
         // Jumping logic
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
             sfxPlayer.PlayOneShot(jump); // Play jump sound only when jumping
+            anim.SetTrigger("Jump");
         }
     }
 
@@ -57,10 +68,6 @@ public class playerMov : MonoBehaviour
 
     }
 
-    /*
-    private void OnDrawGizmosSelected()
-
-    */
 }
-        // Draw a sphere to visualize ground check radius in the editor
+
         

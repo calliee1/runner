@@ -1268,7 +1268,7 @@ Transform:
   m_GameObject: {fileID: 1253933349}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.6, y: -0.16844, z: 9.938871}
+  m_LocalPosition: {x: -28.6, y: -0.16844, z: 0}
   m_LocalScale: {x: 0.8375, y: 14.976562, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1512,18 +1512,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0106028095, y: -0.14667088}
+  m_Offset: {x: -0.023572162, y: -0.17650002}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.64, y: 0.7868852}
+    oldSize: {x: 0.5, y: 0.61}
+    newSize: {x: 0.55, y: 0.79}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5122701, y: 0.71643627}
+  m_Size: {x: 0.41889176, y: 0.61527646}
   m_EdgeRadius: 0
 --- !u!50 &1543918541
 Rigidbody2D:
@@ -1593,12 +1593,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: b454e4987d48e3943a6e9eb29c4b9903, type: 3}
+  m_Sprite: {fileID: 787775426376453680, guid: b7aa730fb85b17c4a962ea1de7c330ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.55, y: 0.79}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1613,8 +1613,8 @@ Transform:
   m_GameObject: {fileID: 1543918539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.18, y: 6.53, z: -3.22}
-  m_LocalScale: {x: 1.58, y: 1.7132728, z: 0.4609907}
+  m_LocalPosition: {x: -6.6, y: -2.45, z: -3.22}
+  m_LocalScale: {x: 2.1318705, y: 2.1318705, z: 2.1318705}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -1642,6 +1642,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  anim: {fileID: 1543918546}
 --- !u!82 &1543918545
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1751,7 +1752,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 4c015fc9631458744b19ff946c543cd5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
