@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3341788895296877098}
   - component: {fileID: 6299122520051461334}
   - component: {fileID: 7008652310276214916}
+  - component: {fileID: 6827076983899940048}
   m_Layer: 3
   m_Name: LargePlatform
   m_TagString: CleanUp
@@ -130,3 +131,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6827076983899940048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7537260777786018268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70bf4747f70b8704f93e4f24632af73b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishPrefab: {fileID: 7088302529777576401, guid: 612a67e3ff032a94ab618697d926ef1a, type: 3}
+  fishOffset: {x: 1, y: 1}
