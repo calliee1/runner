@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2903744930787351721}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0423, y: -2.9753, z: 0}
+  m_LocalPosition: {x: -1.01, y: -2.9753, z: 0}
   m_LocalScale: {x: 1.5332732, y: 1.4871382, z: 0.80555}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -95,7 +95,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2903744930787351721}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1684e362799465046a3932e4369e12f6, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014948189, y: 0.36174625}
+  m_Offset: {x: 0.04033926, y: 0.44535}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8191601, y: 0.31238353}
+  m_Size: {x: 1.7085853, y: 0.14517605}
   m_EdgeRadius: 0
 --- !u!114 &8314112976914727383
 MonoBehaviour:
@@ -144,4 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 7088302529777576401, guid: 612a67e3ff032a94ab618697d926ef1a, type: 3}
-  fishOffset: {x: 1, y: 1}
+  fishOffset: {x: 0, y: 3}
